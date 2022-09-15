@@ -1,3 +1,19 @@
 h1{
-    color: rgb(220, 222, 142);
+    color: rgb(249, 249, 255);
+}
+
+h1, footer {
+    text-align: center;
+}
+footer>a, footer>a:visited {
+    text-decoration: none;
+    color: rgba(0, 203, 218, 0.575);
+}
+
+p{
+    color: rgba(216, 182, 212, 0.827);
+}
+
+a{
+    color: rgb(90, 169, 229);
 }
