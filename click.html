@@ -1,54 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-   <style>
-    #bgvideo {
-      position: fixed;
-      right:0;
-      bottom:0;
-      min-width: 100%;
-      min-height:100%;
-
-    }
-    .content{
-      position: fixed;
-      bottom:0;
-      width:100%;
-      background-color:#EBF5FB;
-      color: rgb(36, 117, 230);
-      height: 200px;
-      font: size 25px;
-    }
-
-    </style>
-
 <meta charset="utf-8">
-
-
-    <title>New Page</title>
-  </head>
-
+<title>Ana's website</title>
+<link rel="stylesheet" href="style.css">
+<style>
   body{
-    <video autoplay muted loop id="bgvideo">
-  <source src="Paint.mp4" type="video/mp4">
-  Your browser does not support html 5 video.
-
-    </video>
-
-
-    <div class="content">
-      <h1>New Page</h1>
-      <p>Welcome!</p>
-      <a href="index.html">Back to homepage</a>
-        
-        <p><a href="https://www.youtube.com/watch?v=G7RgN9ijwE4">Dreams...</a><p>
-        
-
-
-    </div>
-
+    background-image:url('https://i0.wp.com/www.art-mine.com/collectorscorner/wp-content/uploads/2018/06/The-Magic-Hour-2019-Acrylic-on-Canvas-3622-x-5422-3000-Rebecca-Katz.jpg?w=885&ssl=1');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
   }
+
+h1, footer {
+    text-align: center;
+}
+footer>a, footer>a:visited {
+    text-decoration: none;
+    color: rgba(9, 20, 104, 0.703);
+}
 
 </style>
 <script>
@@ -61,9 +31,17 @@ function init() {
   document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
 }
 window.onload = init;
+
+
 </script>
 </head>
 <body>
+<h1>New Page</h1>
+
+<a href="index.html">Homepage</a>
+
+
+<a href="test.html">Test Page</a>
 
 
 <footer>
