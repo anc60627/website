@@ -56,7 +56,7 @@
 .toggle.active {
     background: url('close.png');
     background-repeat: no-repeat;
-    background-size:25px;
+    background-size:60px;
     background-position: center;
 }
 
@@ -150,13 +150,6 @@
 }
 
 
-footer>a, footer>a:visited {
-    text-decoration: none;
-    color: rgb(195, 244, 60);
-    font-size: 120%;
-    }
-
-
 .menu {
     position: absolute;
     top: 0;
@@ -175,13 +168,14 @@ footer>a, footer>a:visited {
 
 .menu ul li a {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 30px;
     color: #111;
 }
 
 .menu ul li a:hover {
     color: rgb(7, 145, 50);
 }
+
 
 
 @media(max-with: 798px) {
@@ -197,5 +191,5 @@ footer>a, footer>a:visited {
     .text h3 {
         font-size: 2em;
     }
-}
+    }
 
