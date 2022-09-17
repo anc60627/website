@@ -1,56 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 <meta charset="utf-8">
+<link rel="stylesheet" href="newpage_style.css">
 <title>Ana's website</title>
-<link rel="stylesheet" href="style.css">
-<style>
-  body{
-    background-image:url('https://i0.wp.com/www.art-mine.com/collectorscorner/wp-content/uploads/2018/06/The-Magic-Hour-2019-Acrylic-on-Canvas-3622-x-5422-3000-Rebecca-Katz.jpg?w=885&ssl=1');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-  }
-
-h1, footer {
-    text-align: center;
-}
-footer>a, footer>a:visited {
-    text-decoration: none;
-    color: rgba(31, 39, 94, 0.558);
-}
-
-</style>
-<script>
-function init() {
-  var loc = window.location.href;
-  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
-  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
-                        loc + '?profile=css3';
-  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
-  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
-}
-window.onload = init;
-
-
-</script>
 </head>
 <body>
+
+<script>
+  function init() {
+    var loc = window.location.href;
+    var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+    var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+    document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+    document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+  }
+  window.onload = init;
+</script>
+
+
+
 <h1>New Page</h1>
 
-<a href="index.html">Homepage</a>
-
-<a href="Web-Code.html">Test Page I</a>
-
-<a href="test300.html">Test Page II</a>
-
-<a href="https://www.youtube.com/watch?v=G7RgN9ijwE4">YouTube watch 👀</a>
+</section>
+<div class="menu">
+  <ul>
+    <li><a href="index.html"><button>Homepage</button></a></li>
+  </ul>
+</div>
 
 
 <footer>
 <a id="vLink1"><strong> HTML </strong> Valid! </a> |
 <a id="vLink2"><strong> CSS </strong> Valid! </a>
 </footer>
+
 </body>
 </html>
 
