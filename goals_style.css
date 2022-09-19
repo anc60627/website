@@ -29,6 +29,29 @@ header {
     text-transform: uppercase;
     text-align: center;
   }
+
+  div {
+    position: absolute;
+    top: 30px;
+    padding: 40px 100px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div a{
+    display: inline-block;
+    font-size: 1em;
+    background: rgb(30, 30, 30);
+    padding: 10px 30px;
+    text-decoration: none;
+    color:rgb(239, 221, 221);
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transform: 0.2s;
+  }
   
   footer {
     position: absolute;
@@ -44,8 +67,6 @@ header {
     display:inline-block;
     filter: invert(1);
     margin-right: 30px;
-    transform: scale(0.5s);
-    transition: 0.5s;
     text-decoration: none;
     font-size: 20px;
     color: rgb(232, 135, 135);
