@@ -52,6 +52,12 @@ header {
     letter-spacing: 2px;
     transform: 0.2s;
   }
+
+  div a:hover {
+    letter-spacing: 6px;
+    background: rgb(239, 221, 221);
+    color:rgb(30, 30, 30);
+  }
   
   footer {
     position: absolute;
