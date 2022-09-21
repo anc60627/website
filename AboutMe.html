@@ -6,30 +6,60 @@
     <title>Ana's website</title>
   </head>
 
-<body>
+  <body>
 
-  <section class="showcase">
-    <header>
-      <h2 class="logo">Ana's Website</h2>
-    </header>
-
-    <video src="recordplayer.mp4" muted loop autoplay></video>
-    <div class="overlay"></div>
-
-    <div class="text">
-      <h2>About</h2>
-      <h3>Me</h3>
-      <a href="index.html">Homepage</a>
-    </div>
-
-    <footer class="Valid">
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Ana's website</h2>
+        <div class="toggle"></div>
+      </header>
+      
+      <video src="recordplayer.mp4" muted loop autoplay></video>
+  
+      <div class="overlay"></div>
+  
+      <div class="text">
+        <h2>Hello</h2> 
+        <h3>World</h3>
+        <p>This is the homepage</p>
+        <a href="AboutMe.html">About Me</a>
+      </div>
+      
+      <ul class="social">
+        <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+        <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+        <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+      </ul>
+  
+    </section>
+  
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="AboutMe.html">About Me</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+  
+        <li><a>_________</a></li>
+  
         <li><a id="vLink1"><strong> HTML </strong> Valid! </a></li>
         <li><a id="vLink2"><strong> CSS </strong> Valid! </a></li>
-    </footer>
-
-  </section>
-
-
+  
+      </ul>
+    </div>
+  
+  
+    <script>
+       const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+  
+        menuToggle.addEventListener('click', () => {
+          menuToggle.classList.toggle('active');
+          showcase.classList.toggle('active');
+        })
+    </script>
+  
   <script>
     function init() {
       var loc = window.location.href;
@@ -41,10 +71,9 @@
     }
     window.onload = init;
   </script>
-
   
-
-
-</body>
-</html>
+  
+  </body>
+  </html>
+  
 
