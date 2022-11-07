@@ -31,10 +31,15 @@ h1 {
 header {
   border-bottom-style: solid;
   border-bottom-width: 5px;
-  border-bottom-color: #d8d8d8;
+  border-bottom-color: #dbd1d1;
+}
+h2{
+  float: right;
+  font-size: 280%;
+  width: fit-content;
 }
 nav {
-  background: #d8d8d8; 
+  background: #f99807; 
   font-weight: bold;
   float: left;
   height: 800px;
@@ -42,11 +47,7 @@ nav {
   margin-right: 10px;
   opacity: 0.8;
 }
-section {
-  background-image: url("../media/globe.png"); 
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+
 .floatright {
   float: right;
   clear: right;
