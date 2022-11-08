@@ -35,6 +35,14 @@ header {
   display: flex;
   background-color: #f1ebeb;
 }
+
+.w3-animate-right {
+  position:relative;animation:animateright 0.7s
+}
+@keyframes animateright{
+  from{right:-800px;opacity:0} to{right:0;opacity:1}
+}
+
 nav {
   background: #f99807; 
   font-weight: bold;
