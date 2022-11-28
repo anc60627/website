@@ -1,0 +1,198 @@
+/* STYLE SHEET FOR INDEX.HTM */
+
+article {	
+  padding: 10px;
+}
+section {
+  background-image: url("../media/globe.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  resize: both;
+  overflow: auto;
+}
+
+body {
+  font-size: 80%;
+  font-family: arial, helvetica, geneva, sans-serif;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #f99807c9;
+}
+footer {
+  font-size: 80%;
+  text-align: center;
+  clear: both;
+  border-top-style: solid;
+  border-top-width: 5px;
+  border-top-color: #f99807c9;
+  margin-top: 0;
+  padding: 0;
+}
+h1 {
+  font-family: arial, helvetica, geneva, sans-serif;
+  margin-top: 5px; 
+  margin-bottom: 0px; 
+}
+
+h2 ~ p {
+  font-style: italic;
+}
+p {
+  width: 150px;
+  height: 100px;
+  background: #add8e6;
+  transition: width 3s, height 3s, transform 3s;
+}
+p:hover {
+  width: 250px;
+  height: 200px;
+  transform: rotate(360deg);
+}
+
+
+header {
+  border-bottom-style: solid;
+  border-bottom-width: 30px;
+  border-bottom-color: #f99807c9;
+  align-items: center;
+  font-size: 350%;
+  display: flex;
+  background-color: #f1ebeb;
+}
+
+.w3-animate-right {
+  position:relative;animation:animateright 0.7s
+}
+@keyframes animateright{
+  from{right:-800px;opacity:0} to{right:0;opacity:1}
+}
+
+nav {
+  background: #f99807; 
+  font-weight: bold;
+  float: left;
+  height: 800px;
+  padding-right: 12px;
+  margin-right: 10px;
+  opacity: 0.8;
+}
+
+.floatright {
+  float: right;
+  clear: right;
+  margin: 10px;
+}
+
+.navlinks {
+  display: block;
+  border: 2px solid #a1a1a1;
+  padding: 2px 5px; 
+  background: #add8e6;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+
+
+
+
+#animation {
+  position: relative;
+  /* Safari and Chrome: */
+  -webkit-animation-name: logoanimation;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+  animation-name: logoanimation;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+#drop-menu {
+  width: 200px;
+  cursor: pointer;
+  display: block;
+  border: 2px solid #a1a1a1;
+  padding: 5px;
+  height: 30px;
+  max-height: 60px;
+  background: #ff9d00;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #888888;
+  font-family: oregonfont;
+  font-size: 50%;
+  color: #fdfdfd;
+}
+#drop-menu:hover {
+  border: 3px solid #bababa;
+}
+#drop-menu:hover .sub-menu {
+  display: inline-block;
+}
+
+#img-rotate {
+  z-index: -1;
+  position: relative;
+  -ms-transform: rotate(345deg); /* Microsoft Edge */
+  -webkit-transform: rotate(345deg); /* Chrome and Safari */
+  transform: rotate(345deg);
+}
+#logo-rotate {
+-webkit-transform: rotateY(180deg); /* Safari and Chrome */
+transform: rotateY(180deg);
+}
+#video-rotate {
+  -ms-transform: rotate(15deg); /* Microsoft Edge */
+  -webkit-transform: rotate(15deg); /* Chrome and Safari */
+  transform: rotate(15deg);
+}
+.sub-menu {
+display: none;
+width: 150px;
+padding: 5px 5px;
+border-radius: 5px;
+box-shadow: 5px 5px 5px #888888;
+-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.sub-menu li {
+  list-style-type: none;
+  display: block;
+  border: 2px solid #add8e6;
+  padding: 2px 5px;
+  background: #d8d8d8;
+  border-radius: 5px;
+}
+.sub-menu li:hover {
+  border: 3px solid #bababa;
+}
+
+
+
+
+@font-face {
+  font-family: oregonfont;
+  src: url("../media/oregon book.ttf");
+}
+@keyframes logoanimation {
+  0% {
+      left: 0px;
+      top: 0px;
+  }
+  50% {
+      left: 700px;
+      top: 0px;
+  }
+  100% {
+      left: 0px;
+      top: 0px;
+  }
+}
+
