@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ninety-nine Cans of Red Bull</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Rubik+Spray+Paint&display=swap');
+@font-face {
+  font-family:'Creepster', cursive;
+  src: url(fonts/Creepster.ttf);
+}
+body {
+  font-family:'Creepster', cursive;
+  background-color: rgb(142, 22, 22);
+}
+h1 {
+  font-size: 3.5vw;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+#song>p {
+  color: rgb(64, 135, 233);
+  text-align: center;
+  font-size: 2.5vw;
+}
+</style>
+
+
+</script>
+</head>
+<body>
+<header>
+<h1>Ninety-nine Cans of Red Bull</h1>
+</header>
+<main id="song">
+
+</main>
+<footer>
+<a id="vLink1"><strong> HTML </strong> Valid! </a> |
+<a id="vLink2"><strong> CSS </strong> Valid! </a>
+</footer>
+<script>
+let drink = "Red Bull";
+let lyrics = "";
+let cans = 99;
+
+while (cans > 1) {
+  lyrics += "<p>";
+  lyrics += cans + " cans of " + drink + " on the fence <br>";
+  lyrics += cans + " cans of " + drink + " on the fence <br>";
+  lyrics += "Take one down, pass it around,";
+  lyrics += "</p>";
+  cans--;
+}
+lyrics += "<p>";
+lyrics += cans + " can of " + drink + " on the fence <br>";
+lyrics += cans + " can of " + drink + " on the fence <br>";
+lyrics += "Take one down, pass it around, no more cans of ";
+lyrics += drink + " on the fence";
+lyrics += "</p>";
+
+document.getElementById("song").innerHTML = lyrics;
+</script>
+</body>
+</html> 
