@@ -4,12 +4,56 @@
 <meta charset="utf-8">
 <title>Planets</title>
 <style>
-@import url(mystyle.css);
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&family=Rubik+Puddles&family=Rubik+Vinyl&display=swap');
+body{
+    background-color: black;
+}
+footer{
+    text-align: center;
+}
+h1{
+    font-family:'Rubik 80s Fade', cursive;
+    color: aliceblue;
+    font-size: 5em;
+}
+h2{
+    color: green;
+    font-family: 'Rubik 80s Fade', cursive;
+    font-size: 3em;
+}
+h3{
+    color: red;
+    font-family: 'Rubik 80s Fade', cursive;
+    font-size: 3em;
+}
+h4{
+    color: blue;
+    font-family: 'Rubik 80s Fade', cursive;
+    font-size: 3em;
+}
+#greenplanet{
+    color: green;
+    font-family: 'Rubik 80s Fade', cursive;
+    font-size: 2em;
+}
+
+#redplanet{
+    color: red;
+    font-family: 'Rubik 80s Fade', cursive;
+    font-size: 2em;
+}
+
+#blueplanet{
+    color: blue;
+    font-family: 'Rubik 80s Fade', cursive;
+    font-size: 2em;
+}
+
 </style>
 <script>
 function updatePlanetStatus() {
   let planet = document.getElementById("greenplanet");
-  planet.innerHTML = "<b>Red Alert</b>: hit by phaser fire!";
+  planet.innerHTML = "<b>Red Alert</b>: hit by an asteroid!";
 }
 function init() {
   let loc = window.location.href;
@@ -34,12 +78,12 @@ window.onload = init;
 All is well.
 </p>
 
-<h2>Red Planet</h2>
+<h3>Red Planet</h3>
 <p id="redplanet">
 Nothing to report.
 </p>
 
-<h2>Blue Planet</h2>
+<h4>Blue Planet</h4>
 <p id="blueplanet">
 All systems A-OK.
 </p>
