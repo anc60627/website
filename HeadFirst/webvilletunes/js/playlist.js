@@ -15,8 +15,8 @@ function addValidation() {
   var CSSvalidLinkStr = 'https://jigsaw.w3.org/css-validator/validator?uri=' + loc;
   document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
   document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+  window.onload = addValidation;
 }
-window.onload = addValidation;
 
 
 
