@@ -28,7 +28,25 @@
     <p>(D) column-width is a CSS property that sets the width of each column in a multi-column layout. It can be set to a specific length value or to auto to automatically calculate the width based on the available space.</p>
   </div>
 
+  <footer style="margin-top:40%">
+  <a id="vLink1"><strong> HTML </strong> Valid! </a>
+  <a id="vLink2"><strong> CSS </strong> Valid! </a>
+</footer>
 </body>
+
+
+
+<script>
+ function addValidation() {
+    var loc = window.location.href;
+    var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+    var CSSvalidLinkStr = 'https://jigsaw.w3.org/css-validator/validator?uri=' + loc;
+    document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+    document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+  }
+  window.onload = addValidation;
+
+</script>
 
 
 </html>

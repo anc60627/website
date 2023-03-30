@@ -23,14 +23,31 @@
     </div> 
 
     <p>
-        51.As a Web designer, you want to ensure that HTML elements will not overlap or lay against one another when users render your Webpages in a browser. 
-        Which of the following can you use to help configure space around each HTML element?
-        a. The External CSS Class Model
-        b. The CSS Document Object Model 
-        c. The CSS Box Model
-        d. The CSS Positioning Scheme Model
+        <li><a> As Web designer, you want to ensure that HTML elements will not overlap or lay against one another when users render your Webpages in a browser. </a></li>
+        <li><a>Which of the following can you use to help configure space around each HTML element?</a></li>
+        <li><a>a. The External CSS Class Model</a></li>
+        <li><a>b. The CSS Document Object Model </a></li>
+        <li><a>c. The CSS Box Model</a></li>
+        <li><a>d. The CSS Positioning Scheme Model</a></li>
     </p>
 
-</body> 
+    <footer style="margin-top:30%">
+        <a id="vLink1"><strong> HTML </strong> Valid! </a>
+        <a id="vLink2"><strong> CSS </strong> Valid! </a>
+      </footer>
+  </body>
+  
+  
+  <script>
+    function addValidation() {
+       var loc = window.location.href;
+       var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+       var CSSvalidLinkStr = 'https://jigsaw.w3.org/css-validator/validator?uri=' + loc;
+       document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+       document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+     }
+     window.onload = addValidation;
+   
+   </script>
 </html>
     
