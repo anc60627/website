@@ -1,108 +1,50 @@
-  
-    <!DOCTYPE html>  
-    <html>  
-    <head>  
-    <title>  
-    CSS font-stretch Property  
-    </title>  
-      
-    <style>  
-    body{  
-    text-align: center;  
-    }  
-    div{  
-    font-family: Arial, Helvetica, sans-serif;  
-    font-size: 20px;  
-    color: blue;  
-    }  
-    .normal {  
-    font-stretch: normal;  
-    }  
-    .semi-condensed {  
-    font-stretch: semi-condensed;  
-    }  
-    .condensed {  
-    font-stretch: condensed;  
-    }  
-    .extra-condensed {  
-    font-stretch: extra-condensed;  
-    }  
-    .ultra-condensed {  
-    font-stretch: ultra-condensed;  
-    }  
-      
-    .semi-expanded {  
-    font-stretch: semi-expanded;  
-    }  
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.a {
+  font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+  font-stretch: condensed;
+}
 
-    .expanded {  
-    font-stretch: expanded;  
-    }  
-    .extra-expanded {  
-    font-stretch: extra-expanded;  
-    }  
-      
-    .ultra-expanded {  
-    font-stretch: ultra-expanded;  
-    }  
-    </style>  
-    </head>  
-      
-    <body>  
-    <h1> Example of the font-stretch property </h1>  
-    <div class = "normal">  
-    normal  
-    </div>  
-      
-    <div class = "semi-condensed">  
-    semi-condensed  
-    </div>  
-    <div class = "condensed">  
-    condensed  
-    </div>  
-      
-    <div class = "extra-condensed">  
-    extra-condensed  
-    </div>  
-      
-    <div class = "ultra-condensed">  
-    ultra-condensed  
-    </div>  
-    <div class = "semi-expanded">  
-    semi-expanded  
-    </div>  
-      
-    <div class = "expanded">  
-    expanded  
-    </div>  
-      
-    <div class = "extra-expanded">  
-    extra-expanded  
-    </div>  
-      
-    <div class = "ultra-expanded">  
-    ultra-expanded  
-    </div>  
-    
-    <footer style="margin-top:40%">
-        <a id="vLink1"><strong> HTML </strong> Valid! </a>
-        <a id="vLink2"><strong> CSS </strong> Valid! </a>
-      </footer>
-    </body>
-    
-    
-    <script>
-    function addValidation() {
-       var loc = window.location.href;
-       var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
-       var CSSvalidLinkStr = 'https://jigsaw.w3.org/css-validator/validator?uri=' + loc;
-       document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
-       document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
-     }
-     window.onload = addValidation;
-    
-    </script>
-    
-    
-    
-    </html> 
+div.b {
+  font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+  font-stretch: expanded;
+}
+</style>
+</head>
+<body>
+
+<h1>The font-stretch Property</h1>
+
+<div>Some normal text in a div element.</div>
+
+<div class="a">Some condensed text in a div element.</div>
+
+<div class="b">Some expanded text in a div element.</div>
+
+<p><b>Note:</b> No browsers support the font-stretch property.</p>
+
+</body>
+<footer style="margin-top:40%">
+    <a id="vLink1"><strong> HTML </strong> Valid! </a>
+    <a id="vLink2"><strong> CSS </strong> Valid! </a>
+  </footer>
+</body>
+
+
+<script>
+function addValidation() {
+   var loc = window.location.href;
+   var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+   var CSSvalidLinkStr = 'https://jigsaw.w3.org/css-validator/validator?uri=' + loc;
+   document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+   document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+ }
+ window.onload = addValidation;
+
+</script>
+
+
+
+</html> 
