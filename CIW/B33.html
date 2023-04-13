@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="utf-8"> 
+</head>
+
+<body>
+    <label for="date-input">Enter a date:</label>
+    <input type="date" id="date-input" name="date" pattern="\d{4}-\d{2}-\d{2}">
+    
+    
+    <label for="email-input">Enter your email:</label>
+    <input type="email" id="email-input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+    
+    
+    <script>
+    // Wrap the code inside a DOMContentLoaded event listener
+    document.addEventListener("DOMContentLoaded", function() {
+      // Get the form element and email input element
+      var form = document.getElementById("my-form");
+      var emailInput = document.getElementById("email-input");
+    
+    
+      // Add an event listener to the form to handle form submission
+      form.addEventListener("submit", function(event) {
+        console.log("Form submitted")
+        // Prevent the form from being submitted by default
+        event.preventDefault();
+    
+    
+        // Get the value of the email input
+        var emailValue = emailInput.value;
+    
+    
+        // Define a regular expression pattern to validate email addresses
+        var emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+    
+    
+        // Test the email value against the pattern
+        if (!emailPattern.test(emailValue)) {
+          // If the email value does not match the pattern, display an error message
+          alert("Please enter a valid email address.");
+          return;
+        }
+    
+    
+        // If the email value is valid, submit the form
+        form.submit();
+      });
+    });
+    </script>
+
+
+
+    </body>
+    </html>
+    

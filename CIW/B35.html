@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Preview Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Get the file input element
+      var fileInput = document.getElementById('fileInput');
+
+      // Add an event listener for when a file is selected
+      fileInput.addEventListener('change', function(event) {
+        // Get the selected file
+        var file = event.target.files[0];
+
+        // Create a file reader object
+        var reader = new FileReader();
+
+        // Set up a callback function for when the file is loaded
+        reader.onload = function() {
+          // Create an image element
+          var img = document.createElement('img');
+
+          // Set the image source to the data URL of the loaded file
+          img.src = reader.result;
+
+          // Add the image element to the preview container
+          var previewContainer = document.getElementById('previewContainer');
+          previewContainer.appendChild(img);
+        };
+
+        // Read the file as a data URL
+        reader.readAsDataURL(file);
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1>Image Preview Example</h1>
+  <input type="file" id="fileInput">
+  <div id="previewContainer"></div>
+</body>
+</html>
