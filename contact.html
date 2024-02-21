@@ -20,10 +20,18 @@
       <div class="overlay"></div>
 
       
+      
       <ul class="social">
-        <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
-        <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
-        <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+        <!-- Email Icon -->
+        <li><a href="mailto:anacisneros_@outlook.com"><img src="/Media/emails-icon.png" alt="Email"  style="width: 40px; height: 40px"; ></a></li>
+        <!-- Phone Call Icon -->
+        <li><a href="tel:+7034799678"><img src="/Media/phone-icon.png" alt="Call" style="width: 40px; height: 40px";></a></li>
+        <!-- LinkedIn Icon -->
+        <li><a href="https://www.linkedin.com/in/ana-cisneros-143660214/"><img src="Media/linkedin-app-white-icon.png" alt="LinkedIn" style="width: 40px; height: 40px;" style="filter:invert(100%)";></a></li>
+
+
+
+        
       </ul>
   
     </section>
@@ -32,6 +40,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="AboutMe.html">About Me</a></li>
+        <li><a href="goals.html">Goals</a></li>
         <li><a href="contact.html">Contact</a></li>
   
         <li><a>_________</a></li>
@@ -42,10 +51,37 @@
       </ul>
     </div>
   
+
+     <!-- Contact Form Section -->
+     <div style="display: flex; align-items: center; justify-content: center; min-height: 100vh;">
+  <section id="contact-form" style="padding: 20px; width: 40%; max-width: 1000px; margin: auto; background-color: rgba(255, 255, 255, 0.8); color: #000; border-radius: 10px; z-index: 100; position: relative; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+    <h3 style="text-align: center; margin-bottom: 20px;">Contact Me</h3>
+    <form action="YOUR_SERVER_SIDE_ENDPOINT" method="POST" style="display: flex; flex-direction: column; gap: 10px;">
+      <label for="name" style="margin-bottom: 5px;">Name:</label>
+      <input type="text" id="name" name="name" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
   
+      <label for="email" style="margin-bottom: 5px;">Email:</label>
+      <input type="email" id="email" name="email" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+  
+      <label for="subject" style="margin-bottom: 5px;">Subject:</label>
+      <input type="text" id="subject" name="subject" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+  
+      <label for="message" style="margin-bottom: 5px;">Message:</label>
+      <textarea id="message" name="message" rows="4" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+  
+      <button type="submit" style="padding: 10px 20px; background-color: #111; color: #fff; border: none; cursor: pointer; text-transform: uppercase; margin-top: 20px; border-radius: 5px;">Send Message</button>
+    </form>
+  </section>
+  
+
+ 
+
     <script>
        const menuToggle = document.querySelector('.toggle');
-        const showcase = document.querySelector('.showcase');
+      const showcase = document.querySelector('.showcase');
+
+        // Add a selector for the contact form
+      const contactForm = document.querySelector('#contact-form');
   
         menuToggle.addEventListener('click', () => {
           menuToggle.classList.toggle('active');
